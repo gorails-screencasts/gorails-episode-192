@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col">
+    <h1>Movies</h1>
+    <% @movies.each do |movie| %>
+      <p><%= link_to movie.name, movie %></p>
+    <% end %>
+  </div>
+
+  <div class="col">
+    <h1>Directors</h1>
+    <% @directors.each do |director| %>
+      <p><%= link_to director.name, director %></p>
+    <% end %>
+  </div>
+</div>
+
